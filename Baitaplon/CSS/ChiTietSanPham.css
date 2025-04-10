@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+} 
+/* HEADER */
+#search{
+    margin-left: 140px;
+    border: 1px solid pink;
+}
+#search:focus{
+    outline: none
+}
+#search::placeholder{
+    color: rgb(249, 182, 194);
+}
+.ti-search{
+    position: absolute;
+    top: 49px;
+    right: 487px;
+    color:white; 
+    border: 1px solid pink; 
+    font-size: 18px;
+    padding: 10px;
+    background-color: pink;
+}
+.lfhead li{
+    display: inline;
+    color: pink;
+    padding-right: 20px;
+}
+.lfhead a{
+    text-decoration: none;
+    color: pink;
+}
+/* NAV */
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin-left: 70px;
+    font-size: 18px;
+}
+#main-menu li{
+    position: relative;
+}
+#main-menu li a{
+    display: block;
+    color: white;
+    background-color: pink;
+    text-decoration: none;
+    line-height: 50px;
+    margin: 0 20px 0px 10px;
+}
+#main-menu li:hover #sub-menu{
+    display: block;
+}
+#sub-menu{
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+#sub-menu li{
+    list-style-type: none;
+}
+#sub-menu li a{
+    width: 90px;
+    list-style: none;
+}
+#main-menu #sub-menu{
+    display: none;  
+    position: absolute;   
+    list-style: none; 
+    
+}
+#main-menu > li:hover > a,
+#main-menu #sub-menu li:hover a{
+    color: black;
+    background-color: pink; 
+}
+/*  */
+.menu1{
+    width: 100%;
+    height: 100px;
+    background-image: url(../IMG/gioithieu/hinh2.jpg);
+    background-size: cover;
+}
+#menu2{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 70px;
+}
+#khung1 img{
+    border-radius: 20px;
+    border: 3px solid pink;
+}
+#product-price {
+    font-size: 25px;
+    font-weight: normal;
+    color: red;
+}
+.soluong{
+    display: inline-block;
+}
+button.btn.btn_num {
+    padding: 4px;
+    width: 30px;
+    border: 1px solid #ced4da;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custom-btn-number {
+    border: none;
+    display: flex !important;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+.prd_quantity {
+    width: 65px !important;
+    text-align: center;
+    border-radius: 0;
+    height: 30px;
+}
+.add_to_cart{
+    border: none;
+    width: 220px;
+    height: 50px;
+    background-color: pink;
+}
+.add_to_cart:hover{
+    background-color: #00FFFF;
+}
+.text_1{
+    color: #fff;
+    font-size: 20px;
+}
+/*  */
+.badge-inner {
+    position: absolute;
+    border-radius: 99%;
+    background-color: #f851a7;
+    font-size: 17px;
+    font-weight: normal;
+    height: 2.8em;
+    width: 2.8em;
+    line-height: 2.8em;
+    color:#fff;
+    top: 250px;
+    left: 150px;
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="icon" href="../Baitaplon/IMG/logo/hinh2.png">
+    <link rel="stylesheet" href="../Baitaplon/CSS/Trangchu.css">
+    <link rel="stylesheet" href="../Baitaplon/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../Baitaplon/themify-icons/themify-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../Baitaplon/JS/jquery-3.6.0.min.js"></script>
+    <script src="../Baitaplon/JS/bootstrap.min.js"></script>
+    <script src="../Baitaplon/JS/dangnhap.js"></script>
+    <script src="../Baitaplon/JS/dangki.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="../Baitaplon/IMG/logo/hinh2.png" style="width: 100px; margin-left: 50px;">
+                    <h2 style="color: pink">TIỆM NHÀ KEM</h2>
+                </div>
+                <div class="col-6">
+                    <input id="search" class="mt-5 p-2"type="text" placeholder="Tìm kiếm ở đây nè..." size="50px">
+                    <a id="search-icon" href="#"><i  class="ti-search"></i></a>
+                </div>
+                <div class="col-3">
+                    <ul class="lfhead mt-5">
+                        <li id="dangnhap">Đăng nhập</li>
+                        <li id="dangky">Đăng ký</li>
+                        <a href="../Baitaplon/HTML/Thanhtoan.html"><i class="ti-bag infor-bag"></i></a>
+                    </ul>
+                </div>
+            </div>   
+        </div>
+        <!-- Nav -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12" style=" width: 100%; height: 50px; background-color: pink; line-height: 32px;">
+                    <ul id="main-menu" >
+                        <li><a href="../Baitaplon/TrangChu.html">Trang chủ</a></li>
+                        <li><a href="../Baitaplon/HTML/GioiThieu.html">Giới thiệu</a></li>
+                        <li><a href="../Baitaplon/HTML/SanPham.html">Sản Phẩm</a>
+                            <ul id="sub-menu">
+                                <li><a href="../Baitaplon/HTML/GaubBong.html">Thú Bông</a></li>
+                                <li><a href="../Baitaplon/HTML/BupBe.html">Búp Bê</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Baitaplon/HTML/LienHe.html">Liên hệ</a></li>
+                        <li><a href="../Baitaplon/HTML/SiteMap.html">Site Map</a></li>
+                        <li><a href="../Baitaplon/HTML/Tintuc.html">Tin Tức</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid" style="position: relative; margin-top: 100px;">
+        <!-- Banner -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../Baitaplon/IMG/gioithieu/hinh5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../Baitaplon/IMG/gioithieu/hinh2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../Baitaplon/IMG/gioithieu/hinh3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+    <!-- Sản phẩm -->
+    <div class="container-fluid p-0">
+        <p class="section-title-main">SẢN PHẨM MỚI</p>
+        <div id="menu-gaubong">
+            <div class="khung">
+                <div class="image-container">
+                   <a href="#"><img src="../Baitaplon/IMG/thubong/ca.jpg"></a>
+                    <div class="overlay">
+                        <a href="#"> <img src="../Baitaplon/IMG/thubong/ca1.jpg"></a>
+                        <div class="badge-inner"><span class="onsale">20</span>
+                    </div>
+                    
+                    </div>  
+                    </div>
+                <p id="product-title">Cá mập dũng sĩ</p>
+                <p id="product-price">300.000 ₫</p>
+                <a href="../Baitaplon/HTML/Ca.html">  <div class="add">Mua ngay</div></a>
+            </div>
+            <div class="khung">
+                <div class="image-container">
+                   <a href="#"><img src="../Baitaplon/IMG/thubong/cho.jpg"></a> 
+                    <div class="overlay">
+                        <a href="#"><img src="../Baitaplon/IMG/thubong/cho1.jpg"></a>
+                    </div>
+                </div>
+                <p id="product-title">Chó Gôggi</p>
+                <p id="product-price">300.000 ₫</p>
+                <a href="../Baitaplon/HTML/Cho.html"><div class="add">Mua ngay</div></a>
+            </div>
+           <div class="khung">
+                <div class="image-container">
+                  <a href="#"><img src="../Baitaplon/IMG/thubong/gau.jpg"></a> 
+                   <div class="overlay">
+                    <a href="#"> <img src="../Baitaplon/IMG/thubong/gau1.jpg"></a>
+                    </div>
+                    </div>  
+                <p id="product-title">Gấu bông Lotso</p>
+                <p id="product-price">500.000 ₫</p>
+                <a href="../Baitaplon/HTML/Gau.html"> <div class="add">Mua ngay</div></a>
+           </div>
+           <div class="khung">
+              <div class="image-container">
+                <a href="#"><img src="../Baitaplon/IMG/thubong/voi.jpg"></a>
+                    <div class="overlay">
+                        <a href="#"><img  src="../Baitaplon/IMG/thubong/voi1.jpg"></a>
+                        </div>
+                </div>
+                <p id="product-title">Chú voi bông</p>
+                <p id="product-price">300.000 ₫</p>
+                <a href="../Baitaplon/HTML/Voi.html"><div class="add">Mua ngay</div></a>
+           </div>
+        </div>
+        <!-- San pham sale -->
+        <p class="section-title-main">SẢN PHẨM ĐANG SALE</p>
+        <div id="menu-gaubong">
+            <div class="khung">
+                <div class="image-container">
+                  <a href="#" ><img src="../Baitaplon/IMG/bupbe/babi.jpg"></a>
+                    <div class="overlay">
+                        <a href="#"><img src="../Baitaplon/IMG/bupbe/babi1.jpg" alt=""></a>
+                    </div>
+                </div>
+                  <div class="badge-inner2"><span class="onsale">-25%</span></div>   
+                <p id="product-title">Búp bê babi </p>
+                <p id="product-price2">150.000 ₫</p>
+                <p id="product-price1" style="text-decoration:line-through;color:gray;">
+                    200.000 ₫
+                </p>
+                <a href="../Baitaplon/HTML/babi.html"><div class="add">Mua ngay</div></a>
+           </div>
+            <div class="khung">
+                <div class="image-container">
+                        <a href="#"><img src="../Baitaplon/IMG/bupbe/fami.jpg"></a>
+                        <div class="overlay">
+                            <a href="#"><img src="../Baitaplon/IMG/bupbe/fami1.jpg" alt=""></a>
+                        </div>
+                        <div class="badge-inner2"><span class="onsale">-20%</span></div> 
+                </div>
+                 
+                <p id="product-title">Cừu Fami</p>
+                <p id="product-price2">240.000 ₫</p>
+                <p id="product-price1" style="text-decoration:line-through;color:gray;">
+                    300.000 ₫
+                </p>
+                <a href="../Baitaplon/HTML/Fami.html"><div class="add">Mua ngay</div></a>
+            </div>
+            <div class="khung">
+                <div class="image-container">
+                        <a href="#"><img src="../Baitaplon/IMG/bupbe/licca.jpg"></a>
+                        <div class="overlay">
+                            <a href="#"><img src="../Baitaplon/IMG/bupbe/licca1.jpg" alt=""></a>
+                        </div>
+                        <div class="badge-inner2"><span class="onsale">-20%</span></div> 
+                </div>  
+                <p id="product-title">Búp bê Licca</p>
+                <p id="product-price2">200.000 ₫</p>
+                <p id="product-price1" style="text-decoration:line-through;color:gray;">
+                    250.000 ₫
+                </p>
+                <a href="../Baitaplon/HTML/Licca.html"><div class="add">Mua ngay</div></a>
+            </div>
+           <div class="khung">
+            <div class="image-container">
+                    <a href="#"><img src="../Baitaplon/IMG/bupbe/disnep.jpg"></a>
+                    <div class="overlay">
+                        <a href="#"><img src="../Baitaplon/IMG/bupbe/disnep1.jpg" alt=""></a>
+                    </div>
+                    <div class="badge-inner2"><span class="onsale">-50%</span></div>
+            </div>
+                <p id="product-title">Công chúa Elsa </p>
+                <p id="product-price2">125.000 ₫</p>
+                <p id="product-price1" style="text-decoration:line-through;color:gray;">
+                    250.000 ₫
+                </p>
+                <a href="../Baitaplon/HTML/Disney.html"><div class="add">Mua ngay</div></a>
+           </div>
+    </div>
+    <!-- DS đăng kí thành công -->
+    <div class="menu2">
+        <div class="container">
+            <div class="col-md-12">
+                <h4 style="text-align: center;">DANH SÁCH ĐĂNG KÝ THÀNH CÔNG</h4>
+                <table class="table table-striped table-bordered">
+                    <thead class="table-dark" style="text-align: center;">
+                        <tr>
+                            <th>HỌ VÀ TÊN</th>
+                            <th>SỐ ĐIỆN THOẠI</th>
+                            <th>ĐỊA CHỈ</th>
+                            <th>NGÀY SINH</th>
+                            <th>EMAIL</th>
+                            <th>PASS</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid mt-5" style="background-color: pink;">
+        <div class="row">
+            <div class="col-4 text-center mt-5">
+                <label> 
+                    <img style="float: left;"  src="../Baitaplon/IMG/logo/hinh2.png" alt="" width="140px" height="140px">
+                    <h5><b style="font-size: 22px; padding-left: 30px;">TIỆM NHÀ KEM</b></h5>
+                    <p style="width: 350px; padding-left: 170px;">Chuyên cung cấp các loại gấu bông, búp bê cao cấp.</p>
+                </label>
+            </div>
+            
+            <div class="col-4 mt-5" style="padding-left: 80px;">
+                <label><b style="font-size: 22px;">CHÍNH SÁCH</b></label>
+                <ul style="list-style: none; padding: 0;">
+                    <li>Chính sách bảo mật thông tin</li>
+                    <li>Chính sách vận chuyển và giao hàng</li>
+                    <li>Chính sách hỗ trợ khách hàng</li>
+                    <li>Chính sách bảo hành và đổi trả</li>
+                    <li>Chính sách bán sỉ/lẻ</li>
+                </ul>
+            </div>
+            <div class="col-4 mt-5">
+                <Label><b style="font-size: 22px;">LIÊN HỆ</b></Label><br>  
+                <label><b>Address:</b> Số 100 đường Thống Nhất, Quận Gò Vấp, Tp.Hồ Chí Minh</label>
+                <label><b>Hotline:</b> 0707102567</label><br>
+                <label><b>E-Mail:</b> shopgaubong@gmail.com</label><br>
+                <label><b>Contact fb:</b> facebook.com/shopgaubong</label>
+                <label><b>Contact ins:</b> instagram.com/shopgaubong</label>
+                <label><b>Contact ytb:</b> youtube.com/shopgaubong</label>  
+            </div>
+        </div>
+    </div>
+    <!-- Moddun đăng nhập -->
+    <div class="modal"  id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" >
+                    <h4 style="margin-left: 160px;">ĐĂNG NHẬP</h4>
+                    <button class="Close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input id="txtTen" type="text" size="50px" class="form-control" placeholder="Email đăng nhập">
+                            <span id="tbTen" class="text-danger">*</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input id="txtMk" type="text" class="form-control" placeholder="Mật khẩu">
+                            <span id="tbMk" class="text-danger">*</span>
+                        </div>
+                    </div>
+                    <div class="text-center" >
+                        <button type="button" id="btnsave"  class="btn btn-success">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="contact-SignIn">
+                        <p class="text-center">Hoặc đăng nhập bằng:</p>
+                        <ul class="icon-contact">
+                            <li>
+                                <a href="https://www.facebook.com/"><i class="ti-facebook"></i> Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/"><i class="ti-instagram"></i> Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://google.com/"><i class="ti-google"></i> Google</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <label for="">Nếu chưa có tài khoản? </label>
+                    <a href="#" class="register-request">Đăng kí</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Mô đun đăng kí -->
+    <div class="modal" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h4>ĐĂNG KÝ TÀI KHOẢN</h4>
+                    <button class="Close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control"  id="txtHoten" placeholder="Họ tên" size="50px">
+                            <span id="tbHoten" class="text-danger">*</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" id="txtSdt" placeholder="Số điện thoại" size="50px">
+                            <span id="tbSdt" class="text-danger">*</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="text"  class="form-control" id="txtDc" placeholder="Địa chỉ" size="50px">
+                            <span id="tbDc" class="text-danger">*</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="date" class="form-control"  id="txtNgay" placeholder="Ngày sinh" size="50px">
+                            <span id="tbNgay" class="text-danger">*</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="text"  class="form-control" id="txtEmail" placeholder="Email" size="50px">
+                            <span id="tbEmail" class="text-danger">*</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control"  id="txtPass" placeholder="Password" size="50px">
+                            <span id="tbPass" class="text-danger">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="btnSave" class="btn btn-success" >ĐĂNG KÝ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

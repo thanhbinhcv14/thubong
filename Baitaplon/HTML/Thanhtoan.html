@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link rel="icon" href="../IMG/logo/hinh2.png">
+    <link rel="stylesheet" href="../CSS/Thanhtoan.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/thanhtoan.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="../IMG/logo/hinh2.png" style="width: 100px; margin-left: 50px;">
+                    <h2 style="color: pink">TIỆM NHÀ KEM</h2>
+                </div>
+                <div class="col-6">
+                    <input id="search" class="mt-5 p-2"type="text" placeholder="Tìm kiếm ở đây nè..." size="50px">
+                    <a id="search-icon" href="#"><i  class="ti-search"></i></a>
+                </div>
+                <div class="col-3">
+                    <ul class="lfhead mt-5">
+                        <li id="dangnhap">Đăng nhập</li>
+                        <li id="dangky">Đăng ký</li>
+                        <a href="../HTML/Thanhtoan.html"><i class="ti-bag infor-bag"></i></a>
+                    </ul>
+                </div>
+            </div>   
+        </div>
+        <!-- Nav -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12" style=" width: 100%; height: 50px; background-color: pink; line-height: 32px;">
+                    <ul id="main-menu" >
+                        <li><a href="../TrangChu.html">Trang chủ</a></li>
+                        <li><a href="../HTML/Gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="../HTML/SanPham.html">Sản Phẩm</a>
+                            <ul id="sub-menu">
+                                <li><a href="../HTML/GaubBong.html">Thú Bông</a></li>
+                                <li><a href="../HTML/BupBe.html">Búp Bê</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../HTML/LienHe.html">Liên hệ</a></li>
+                        <li><a href="../HTML/sitemap.html">Site Map</a></li>
+                        <li><a href="../HTML/Tintuc.html">Tin Tức</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Backgr -->
+<div class="container-fluid p-0">
+    <div class="backgr"></div>
+</div>
+<div class="container mt-5 bg-light p-5" style="width: 1200px;">
+    <div class="row">
+        <h1 class="text-center">ĐẶT MUA SẢN PHẨM</h1>
+    </div>
+    <div class="row">
+        <div class="body">
+            <form class="form-horizontal mt-5">
+                <div class="row">
+                    <input class="col-md-6" type="text" name="name" id="txtTen" placeholder="Họ và tên">
+                </div>
+                <div class="form-group">
+                    <span class="text-danger" id="tbTen">(*)</span>
+                </div>
+                <div class="row">
+                    <input type="text" id="diachi" class="col-md-6" placeholder="Nhập địa chỉ" required>
+                </div>
+                <div class="form-group">
+                    <span class="text-danger" id="tbdiachi">(*)</span>
+                </div>
+                <div class="row">
+                    <input type="text" id="txtSdt" class="col-md-6" placeholder="Nhập số điện thoại" required>
+                </div>
+                <div class="form-group">
+                    <span class="text-danger" id="tbSdt">(*)</span>
+                </div>
+                <!-- table -->
+                <div class="row">
+                    <table class="table table-bordered table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Giá thành</th>
+                                <th>Thành tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <select name="sanpham" id="sanpham" class="form-control">
+                                        <option value="300000">Cá mập dũng sĩ</option>
+                                        <option value="300000">Chó Gôggi</option>
+                                        <option value="500000">Gấu bông Lotso</option>
+                                        <option value="300000">Chú voi bông</option>
+                                        <option value="200000">Chim cánh cụt</option>
+                                        <option value="300000">Mèo hoàng thượng</option>
+                                        <option value="300000">Chú khỉ bông</option>
+                                        <option value="200000">Chú heo bông</option>
+                                        <option value="150000">Búp bê babi</option>
+                                        <option value="240000">Cừu Fami</option>
+                                        <option value="200000">Búp bê Licca</option>
+                                        <option value="125000">Công chúa Elsa</option>
+                                        <option value="300000">Búp bê Sankid</option>
+                                        <option value="200000">Barbie 3D</option>
+                                        <option value="250000">Búp bê bông</option>
+                                        <option value="500000">Búp bê Fashion</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="soluong" onkeyup="capnhatTien()">
+                                        <input type="text" id="quantity" name="quantity" class="text-center form-control input-number" value="" min="1" max="20">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <input type="text" class="form-control" readonly id="gia" value="300000">
+                                </td>
+                                <td id="thanhtien"></td>
+                            </tr>
+                        </tbody> 
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="">Hình thức vận chuyển:</label>
+                            <select onclick="capnhatTien()" class="col-md-2" name="vanchuyen" id="vanchuyen" style="margin-left: 100px;">
+                                <option value="30000">Giao hàng nhanh</option>
+                                <option value="15000">Giao hàng tiết kiệm</option>
+                        </select>
+                        <span style="margin-left: 10px; color: red;" class="mt-sm-1">₫</span>
+                        <input type="text" class="col-md-1" id="txtDongia" readonly value="30000" style="color: red; border: none; outline: none;">
+                    </div>
+                </div>
+                    <label class="mt-3" for="">Hình thức thanh toán:</label>
+                        <input type="radio" name="httt" id="radtindung" style="margin-left: 105px;">Thẻ tín dụng
+                        <input type="radio" name="httt" id="radtienmat" style="margin-left: 10px;" checked>Thanh toán khi nhận hàng
+            </form>
+            <div class="mt-3">Tổng tiền: <span class="ml-md-2" id="tongtien" style="color: red;"></span></div>
+        </div>
+        <div class="footer row">
+            <button class="btn btn-sucess btn-group-justified mt-3" id="btndathang" type="button" style="color: white; background-color: pink; width: 150px;margin-left: 40%;">
+                ĐẶT HÀNG
+            </button>
+    </div>
+</div>
+</div>
+<!-- footer -->
+<div class="container-fluid mt-5" style="background-color: pink;">
+    <div class="row">
+        <div class="col-4 text-center mt-5">
+            <label> 
+                <img style="float: left;"  src="../IMG/logo/hinh2.png" alt="" width="140px" height="140px">
+                <h5><b style="font-size: 22px; padding-left: 30px;">TIỆM NHÀ KEM</b></h5>
+                <p style="width: 350px; padding-left: 170px;">Chuyên cung cấp các loại gấu bông, búp bê cao cấp.</p>
+            </label>
+        </div>
+        
+        <div class="col-4 mt-5" style="padding-left: 80px;">
+            <label><b style="font-size: 22px;">CHÍNH SÁCH</b></label>
+            <ul style="list-style: none; padding: 0;">
+                <li>Chính sách bảo mật thông tin</li>
+                <li>Chính sách vận chuyển và giao hàng</li>
+                <li>Chính sách hỗ trợ khách hàng</li>
+                <li>Chính sách bảo hành và đổi trả</li>
+                <li>Chính sách bán sỉ/lẻ</li>
+            </ul>
+        </div>
+        <div class="col-4 mt-5">
+            <Label><b style="font-size: 22px;">LIÊN HỆ</b></Label><br>  
+            <label><b>Address:</b> Số 100 đường Thống Nhất, Quận Gò Vấp, Tp.Hồ Chí Minh</label>
+            <label><b>Hotline:</b> 0707102567</label><br>
+            <label><b>E-Mail:</b> shopgaubong@gmail.com</label><br>
+            <label><b>Contact fb:</b> facebook.com/shopgaubong</label>
+            <label><b>Contact ins:</b> instagram.com/shopgaubong</label>
+            <label><b>Contact ytb:</b> youtube.com/shopgaubong</label>  
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

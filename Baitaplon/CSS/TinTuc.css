@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+} 
+/* HEADER */
+#search{
+    margin-left: 140px;
+    border: 1px solid pink;
+}
+#search:focus{
+    outline: none
+}
+#search::placeholder{
+    color: rgb(249, 182, 194);
+}
+.ti-search{
+    position: absolute;
+    top: 49px;
+    right: 487px;
+    color:white; 
+    border: 1px solid pink; 
+    font-size: 18px;
+    padding: 10px;
+    background-color: pink;
+}
+.lfhead li{
+    display: inline;
+    color: pink;
+    padding-right: 20px;
+}
+.lfhead a{
+    text-decoration: none;
+    color: pink;
+}
+/* NAV */
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin-left: 70px;
+    font-size: 18px;
+}
+#main-menu li{
+    position: relative;
+}
+#main-menu li a{
+    display: block;
+    color: white;
+    background-color: pink;
+    text-decoration: none;
+    line-height: 50px;
+    margin: 0 20px 0px 10px;
+}
+#main-menu li:hover #sub-menu{
+    display: block;
+}
+#sub-menu{
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+#sub-menu li{
+    list-style-type: none;
+}
+#sub-menu li a{
+    width: 90px;
+    list-style: none;
+}
+#main-menu #sub-menu{
+    display: none;  
+    position: absolute;   
+    list-style: none; 
+    
+}
+#main-menu > li:hover > a,
+#main-menu #sub-menu li:hover a{
+    color: black;
+    background-color: pink; 
+}
+/* Tin tuc */
+p {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+h3{
+    color: #00CED1; 
+    margin-left: 150px;
+}
+img:hover{
+    transform: scale(1.1);
+}

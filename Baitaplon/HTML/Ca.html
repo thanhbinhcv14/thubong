@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Cá Mập</title>
+    <link rel="icon" href="../IMG/logo/hinh2.png">
+    <link rel="stylesheet" href="../CSS/ChiTietSanPham.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="../IMG/logo/hinh2.png" style="width: 100px; margin-left: 50px;">
+                    <h2 style="color: pink">TIỆM NHÀ KEM</h2>
+                </div>
+                <div class="col-6">
+                    <input id="search" class="mt-5 p-2"type="text" placeholder="Tìm kiếm ở đây nè..." size="50px">
+                    <a id="search-icon" href="#"><i  class="ti-search"></i></a>
+                </div>
+                <div class="col-3">
+                    <ul class="lfhead mt-5">
+                        <li id="dangnhap">Đăng nhập</li>
+                        <li id="dangky">Đăng ký</li>
+                        <a href="../HTML/ThanhToan.html"><i class="ti-bag infor-bag"></i></a>
+                    </ul>
+                </div>
+            </div>   
+        </div>
+        <!-- Nav -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12" style=" width: 100%; height: 50px; background-color: pink; line-height: 32px;">
+                    <ul id="main-menu" >
+                        <li><a href="../TrangChu.html">Trang chủ</a></li>
+                        <li><a href="../HTML/Gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="../HTML/SanPham.html">Sản Phẩm</a>
+                            <ul id="sub-menu">
+                                <li><a href="../HTML/GaubBong.html">Thú Bông</a></li>
+                                <li><a href="../HTML/BupBe.html">Búp Bê</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../HTML/LienHe.html">Liên hệ</a></li>
+                        <li><a href="../HTML/sitemap.html">Site Map</a></li>
+                        <li><a href="../HTML/Tintuc.html">Tin Tức</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-6">
+                    <div id="khung1" class="text-center">
+                        <img width="500px" height="400px" src="../IMG/thubong/ca.jpg" >
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h2>Cá mập dũng sĩ</h2>
+                    <p id="product-price">300.000 ₫</p>
+                    <div class="soluong">
+                        <label>Số lượng:</label>
+                        <div class="custom input_number_product custom-btn-number ">									 
+                            <button class="btn btn_num num_1 button button_qty" onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro )) result.value--;return false;" type="button" fdprocessedid="ga9ekn">-</button>
+                            <input type="text" id="qtym" name="quantity" value="1" maxlength="3" class="form-control prd_quantity " onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" onchange="if(this.value == 0)this.value=1;" fdprocessedid="88v5id">
+                            <button class="btn btn_num num_2 button button_qty" onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro )) result.value++;return false;" type="button" fdprocessedid="ejfaho">+</button>
+                        </div>
+                    </div><br>
+                    <a href="../HTML/ThanhToan.html"><button type="submit" class="add_to_cart" fdprocessedid="r05kmj"><span class="text_1">Thêm vào giỏ hàng</span></button></a>
+                    <div id="product-description" class="mt-4">
+                        <h3>Đặc điểm</h3>
+                        <p>
+                            Gấu bông Cá Mập đang nằm trong danh sách những sản phẩm bán chạy và đang được các bạn trẻ yêu thích nhất.<br> Chất Liệu: Gấu Bông Cá Mập được làm từ chất liệu lông cao cấp, bên trong Gấu được nhồi 100% <br>gòn trắng đàn hồi tinh khiết, giúp Gấu Bông Cá Mập rất căng bông, êm ái và cực kì an toàn cho sức khỏe.
+                        </p>    
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- footer -->
+    <div class="container-fluid mt-5" style="background-color: pink;">
+        <div class="row">
+            <div class="col-4 text-center mt-5">
+                <label> 
+                    <img style="float: left;"  src="../IMG/logo/hinh2.png" alt="" width="140px" height="140px">
+                    <h5><b style="font-size: 22px; padding-left: 30px;">TIỆM NHÀ KEM</b></h5>
+                    <p style="width: 350px; padding-left: 170px;">Chuyên cung cấp các loại gấu bông, búp bê cao cấp.</p>
+                </label>
+            </div>
+            
+            <div class="col-4 mt-5" style="padding-left: 80px;">
+                <label><b style="font-size: 22px;">CHÍNH SÁCH</b></label>
+                <ul style="list-style: none; padding: 0;">
+                    <li>Chính sách bảo mật thông tin</li>
+                    <li>Chính sách vận chuyển và giao hàng</li>
+                    <li>Chính sách hỗ trợ khách hàng</li>
+                    <li>Chính sách bảo hành và đổi trả</li>
+                    <li>Chính sách bán sỉ/lẻ</li>
+                </ul>
+            </div>
+            <div class="col-4 mt-5">
+                <Label><b style="font-size: 22px;">LIÊN HỆ</b></Label><br>  
+                <label><b>Address:</b> Số 100 đường Thống Nhất, Quận Gò Vấp, Tp.Hồ Chí Minh</label>
+                <label><b>Hotline:</b> 0707102567</label><br>
+                <label><b>E-Mail:</b> shopgaubong@gmail.com</label><br>
+                <label><b>Contact fb:</b> facebook.com/shopgaubong</label>
+                <label><b>Contact ins:</b> instagram.com/shopgaubong</label>
+                <label><b>Contact ytb:</b> youtube.com/shopgaubong</label>  
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
