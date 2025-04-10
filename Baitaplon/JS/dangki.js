@@ -50,7 +50,7 @@ $(document).ready(function(){
             return false;
         }
         if(!kt.test(txtDc.val())){
-            tbDc.html("*Tên tỉnh phải viết hoa");
+            tbDc.html("*Tên tỉnh buộcbuộc viết hoa");
             return false;
         }
         tbDc.html("*");
